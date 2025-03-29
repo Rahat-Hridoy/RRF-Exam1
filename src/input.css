@@ -9,3 +9,6 @@
 .contact-info {
   @apply flex items-center justify-center;
 }
+.portfolio-card {
+  @apply w-[30%];
+}

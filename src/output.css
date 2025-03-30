@@ -8,7 +8,6 @@
       "Courier New", monospace;
     --color-red-500: oklch(0.637 0.237 25.331);
     --color-red-600: oklch(0.577 0.245 27.325);
-    --color-amber-400: oklch(0.828 0.189 84.429);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-sm: 0.875rem;
@@ -232,6 +231,9 @@
   }
   .top-55 {
     top: calc(var(--spacing) * 55);
+  }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
   }
   .isolate {
     isolation: isolate;
@@ -1139,6 +1141,9 @@
   .bg-\[\#0088cc\] {
     background-color: #0088cc;
   }
+  .bg-\[\#F7F7F7\] {
+    background-color: #F7F7F7;
+  }
   .bg-\[\#FFD4D0\] {
     background-color: #FFD4D0;
   }
@@ -1147,9 +1152,6 @@
   }
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
-  }
-  .bg-amber-400 {
-    background-color: var(--color-amber-400);
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
@@ -1331,6 +1333,9 @@
   }
   .object-top {
     object-position: top;
+  }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
   }
   .p-30 {
     padding: calc(var(--spacing) * 30);
@@ -2012,7 +2017,10 @@
   justify-content: center;
 }
 .portfolio-card {
+  position: relative;
   width: 30%;
+  background-color: var(--color-white);
+  padding-bottom: calc(var(--spacing) * 10);
 }
 @property --tw-translate-x {
   syntax: "*";

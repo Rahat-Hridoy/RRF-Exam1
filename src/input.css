@@ -10,5 +10,5 @@
   @apply flex items-center justify-center;
 }
 .portfolio-card {
-  @apply w-[30%];
+  @apply w-[30%] bg-white pb-10 relative;
 }

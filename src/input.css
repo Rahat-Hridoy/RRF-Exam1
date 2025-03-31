@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+.container {
+  @apply w-[85%] m-auto py-15 text-[#1F1F1F];
+}
 .btn {
   @apply text-center font-semibold px-10 py-1  border transition-all duration-300;
 }
